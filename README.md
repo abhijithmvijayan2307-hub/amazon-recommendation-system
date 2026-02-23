@@ -18,7 +18,7 @@ The application is built using **Python**, **Scikit-Learn**, and **Streamlit** f
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Multi-mode recommendation system
 - Modular architecture (separated ML logic & UI)
@@ -28,7 +28,7 @@ The application is built using **Python**, **Scikit-Learn**, and **Streamlit** f
 
 ---
 
-## 🧠 Recommendation Techniques Used
+##  Recommendation Techniques Used
 
 ### 1️⃣ Popularity-Based Filtering
 Recommends top-rated or most frequently interacted products.
@@ -41,7 +41,7 @@ Applies matrix factorization to predict user preferences.
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 
 amazon-recommendation-system/
@@ -77,7 +77,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 4️⃣ Run the Application
 streamlit run src/app.py
-🛠️ Tech Stack
+ Tech Stack
 
 Python
 
@@ -91,7 +91,7 @@ Scikit-Surprise (for SVD)
 
 Streamlit
 
-📊 Future Improvements
+## 📊 Future Improvements
 
 Hybrid recommendation system
 
@@ -103,7 +103,7 @@ Docker containerization
 
 API integration (FastAPI)
 
-👨‍💻 Author
+Author
 
 Abhijith M Vijayan
 Machine Learning Enthusiast | Data Science | Recommendation Systems
