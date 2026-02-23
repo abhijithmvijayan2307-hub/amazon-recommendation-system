@@ -65,7 +65,7 @@ amazon-recommendation-system/
 
 ## 🖥️ How to Run the Project
 
-### 1️⃣ Clone the Repository
+## 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/amazon-recommendation-system.git
