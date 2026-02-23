@@ -93,18 +93,13 @@ Streamlit
 
 
 ---
+## 📈 Future Improvements
 
-## 🖥️ Future Improvements
-
-Hybrid recommendation system
-
-Model evaluation metrics (RMSE, Precision@K)
-
-Deployment using Streamlit Cloud
-
-Docker support
-
-REST API integration
+- Hybrid recommendation system
+- Model evaluation metrics (RMSE, Precision@K)
+- Deployment using Streamlit Cloud
+- Docker support
+- REST API integration
 
 
 ---
