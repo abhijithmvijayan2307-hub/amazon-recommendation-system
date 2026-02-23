@@ -91,17 +91,23 @@ Scikit-Surprise (for SVD)
 
 Streamlit
 
-## 📊 Future Improvements
+
+---
+
+📈 Future Improvements
 
 Hybrid recommendation system
 
 Model evaluation metrics (RMSE, Precision@K)
 
-Deployment to Streamlit Cloud
+Deployment using Streamlit Cloud
 
-Docker containerization
+Docker support
 
-API integration (FastAPI)
+REST API integration
+
+
+---
 
 Author
 
