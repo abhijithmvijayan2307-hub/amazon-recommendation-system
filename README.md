@@ -42,6 +42,8 @@ Applies matrix factorization to predict user preferences.
 ---
 
 ## 🏗️ Project Structure
+
+
 amazon-recommendation-system/
 │
 ├── src/
@@ -57,10 +59,15 @@ amazon-recommendation-system/
 │
 ├── requirements.txt
 └── README.md
+
+
 ---
 
 ## 🖥️ How to Run the Project
+
 ### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/your-username/amazon-recommendation-system.git
 cd amazon-recommendation-system
 2️⃣ Create Virtual Environment (Recommended)
@@ -71,18 +78,32 @@ pip install -r requirements.txt
 4️⃣ Run the Application
 streamlit run src/app.py
 🛠️ Tech Stack
+
 Python
+
 NumPy
+
 Pandas
+
 Scikit-Learn
+
 Scikit-Surprise (for SVD)
+
 Streamlit
+
 📊 Future Improvements
+
 Hybrid recommendation system
+
 Model evaluation metrics (RMSE, Precision@K)
+
 Deployment to Streamlit Cloud
+
 Docker containerization
+
 API integration (FastAPI)
+
 👨‍💻 Author
+
 Abhijith M Vijayan
 Machine Learning Enthusiast | Data Science | Recommendation Systems
