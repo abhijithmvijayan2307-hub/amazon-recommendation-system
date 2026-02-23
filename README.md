@@ -94,7 +94,7 @@ Streamlit
 
 ---
 
-📈 Future Improvements
+## 🖥️ Future Improvements
 
 Hybrid recommendation system
 
@@ -109,7 +109,7 @@ REST API integration
 
 ---
 
-Author
+## Author
 
 Abhijith M Vijayan
 Machine Learning Enthusiast | Data Science | Recommendation Systems
