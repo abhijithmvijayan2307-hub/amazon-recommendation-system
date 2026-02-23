@@ -67,7 +67,6 @@ amazon-recommendation-system/
 
 ## 1️⃣ Clone the Repository
 
-```bash
 git clone https://github.com/your-username/amazon-recommendation-system.git
 cd amazon-recommendation-system
 2️⃣ Create Virtual Environment (Recommended)
