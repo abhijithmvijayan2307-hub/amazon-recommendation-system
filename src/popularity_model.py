@@ -1,32 +1,63 @@
 import pandas as pd
 import os
 
-# Get base directory
+# ==============================
+# Paths
+# ==============================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(BASE_DIR, "..", "data", "cleaned_amazon.csv")
+DATA_PATH = os.path.join(BASE_DIR, "..", "data", "cleaned_amazon.csv")
+PRODUCT_PATH = os.path.join(BASE_DIR, "..", "data", "products.csv")
 
-# Load cleaned dataset
-df = pd.read_csv(file_path)
+# ==============================
+# Load data once
+# ==============================
+df = pd.read_csv(DATA_PATH)
+products = pd.read_csv(PRODUCT_PATH)
 
-print("Dataset Shape:", df.shape)
+# Map ASIN -> Title
+asin_to_title = dict(zip(products['asin'], products['title']))
 
-# -----------------------------
+# ==============================
 # Popularity Model
-# -----------------------------
+# ==============================
+# Popularity = average rating * number of ratings
 
-# Calculate average rating and total ratings per product
-product_stats = df.groupby('asin').agg({
-    'overall': ['mean', 'count']
+rating_stats = df.groupby("asin").agg({
+    "overall": ["mean", "count"]
 })
 
-product_stats.columns = ['average_rating', 'rating_count']
-product_stats = product_stats.reset_index()
+rating_stats.columns = ["avg_rating", "rating_count"]
 
-# Sort by highest average rating & rating count
-product_stats = product_stats.sort_values(
-    by=['average_rating', 'rating_count'],
-    ascending=False
-)
+# Score formula (Amazon style weighted popularity)
+rating_stats["score"] = rating_stats["avg_rating"] * rating_stats["rating_count"]
 
-print("\nTop 10 Recommended Products (Popularity Based):")
-print(product_stats.head(10))
+# Sort descending
+popular_items = rating_stats.sort_values("score", ascending=False)
+
+
+# ==============================
+# Function required by app.py
+# ==============================
+def get_popular_items(top_n=5):
+    """
+    Returns top popular products (fallback recommendations)
+    """
+
+    top = popular_items.head(top_n)
+
+    results = []
+    for asin in top.index:
+        title = asin_to_title.get(asin, asin)
+        score = round(top.loc[asin, "avg_rating"], 2)
+        results.append((title, score))
+
+    return results
+
+
+# ==============================
+# Test
+# ==============================
+if __name__ == "__main__":
+    print("\nTop Popular Items:\n")
+    for item in get_popular_items(5):
+        print(item)
