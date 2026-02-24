@@ -60,6 +60,16 @@ amazon-recommendation-system/
 ├── requirements.txt
 └── README.md
 
+## 🖼️ Application Preview
+
+### 🔹 Main Interface
+![Main Interface](images/main_interface.png)
+
+### 🔹 Recommendation Mode 1 Output
+![Mode 1](images/mode1_output.png)
+
+### 🔹 Recommendation Mode 2 Output
+![Mode 2](images/mode2_output.png)
 
 ---
 
