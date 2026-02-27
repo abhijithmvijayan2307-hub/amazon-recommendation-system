@@ -4,15 +4,15 @@ A machine learning–based recommendation system that suggests products using mu
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project implements a modular recommendation system inspired by real-world e-commerce platforms like Amazon.
 
 The system supports multiple recommendation approaches:
 
-- ⭐ Popularity-Based Recommendation
-- 👥 User-Based Collaborative Filtering
-- 🎯 SVD Matrix Factorization Model
+-  Popularity-Based Recommendation
+-  User-Based Collaborative Filtering
+-  SVD Matrix Factorization Model
 
 The application is built using **Python**, **Scikit-Learn**, and **Streamlit** for interactive UI.
 
@@ -60,7 +60,7 @@ amazon-recommendation-system/
 ├── requirements.txt
 └── README.md
 
-## 🖼️ Application Preview
+##  Application Preview
 
 ### 🔹 Main Interface
 ![Main Interface](images/main_interface.png)
@@ -73,7 +73,7 @@ amazon-recommendation-system/
 
 ---
 
-## 🖥️ How to Run the Project
+##  How to Run the Project
 
 ## 1️⃣ Clone the Repository
 
@@ -91,7 +91,7 @@ streamlit run src/app.py
 
 ---
 
-## 📈 Future Improvements
+##  Future Improvements
 
 
 - Hybrid recommendation system
